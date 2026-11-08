@@ -5,8 +5,9 @@ const config = {
   canvas_width: LARGHEZZA,
   canvas_height: ALTEZZA,
   canvas_id: "area_gioco",
-  background_color: 0x000000,
-    gravity_value: 0,
+  background_color: 0xF7DC6F,
+    gravity_value: 2000, 
+    debug_mode: true,
 };
 PP.game.create(config);
 
