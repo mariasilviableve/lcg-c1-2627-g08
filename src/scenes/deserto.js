@@ -1,5 +1,5 @@
 const L_LIVELLO = 3840; // il deserto è largo 3 schermi
-const ANTICIPO_CAMERA = 200;
+const ANTICIPO_CAMERA = 280;
 
 // il terreno
 const TERRA = "0xB96E54"; 
@@ -19,10 +19,10 @@ const A_OSTACOLO = 80;
 const X_OSTACOLI = [900, 1500, 2200]; // Punti in cui appariranno
 
 // definire i tasti e le velocità
-const VEL_CORSA = 400;
-const VEL_SALTO = 1000;
-const TASTO_SX = PP.key_codes.LEFT;
-const TASTO_DX = PP.key_codes.RIGHT;
+const VEL_CORSA = 550;
+const VEL_SALTO = 900;
+const TASTO_SX = PP.key_codes.A;
+const TASTO_DX = PP.key_codes.D;
 const TASTO_SALTO = PP.key_codes.SPACE; //forse va cambiato con la freccia in alto?
 
 //definire l'attrito
@@ -67,7 +67,7 @@ function crea_ostacoli(s) {
 function crea_camera(s) {
     PP.physics.set_world_bounds(s, 0, 0, L_LIVELLO, ALTEZZA);
     PP.camera.set_bounds(s, 0, 0, L_LIVELLO, ALTEZZA); // Espande i confini fisici e visivi al nuovo L_LIVELLO
-    PP.camera.start_follow(s, viaggiatore, -ANTICIPO_CAMERA, 0); // Fa seguire il viaggiatore tenendolo decentrato di 200px
+    PP.camera.start_follow(s, viaggiatore, -ANTICIPO_CAMERA, 0); // Fa seguire il viaggiatore tenendolo decentrato di 280px
 }
 
 function update(s) { //per ricalcolare la velocità a ogni frame
