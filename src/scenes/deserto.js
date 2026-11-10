@@ -16,7 +16,7 @@ const A_VIAGGIATORE = 80;
 const ROSSO = "0xE44A4A";
 const L_OSTACOLO = 80;
 const A_OSTACOLO = 80;
-const X_OSTACOLI = [900, 1500, 2200]; // Punti in cui appariranno
+const X_OSTACOLI = [900, 1500, 2200]; // Punti in cui appariranno 
 
 // definire i tasti e le velocità
 const VEL_CORSA = 600;
@@ -26,7 +26,7 @@ const TASTO_DX = PP.key_codes.D;
 const TASTO_SALTO = PP.key_codes.SPACE; //forse va cambiato con la freccia in alto?
 
 //definire l'attrito
-const ATTRITO_SABBIA = 3000;
+const ATTRITO_SABBIA = 6000;
 
 let viaggiatore;
 let terreno;
