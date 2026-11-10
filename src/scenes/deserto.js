@@ -1,4 +1,4 @@
-const L_LIVELLO = 3840; // il deserto è largo 3 schermi
+const L_LIVELLO = 30720; // il deserto è largo 21 schermi
 const ANTICIPO_CAMERA = 280;
 
 // il terreno
@@ -19,7 +19,7 @@ const A_OSTACOLO = 80;
 const X_OSTACOLI = [900, 1500, 2200]; // Punti in cui appariranno
 
 // definire i tasti e le velocità
-const VEL_CORSA = 550;
+const VEL_CORSA = 600;
 const VEL_SALTO = 900;
 const TASTO_SX = PP.key_codes.A;
 const TASTO_DX = PP.key_codes.D;
